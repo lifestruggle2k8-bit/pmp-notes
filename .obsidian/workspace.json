@@ -1,0 +1,373 @@
+{
+  "main": {
+    "id": "c6ca9a340a2dacfc",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b05e2ff68b754c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "560903cf0cb5f8a2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "專案管理輕鬆學/wiki/study/📊 PMP 學習路線圖 (Markdown版).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "📊 PMP 學習路線圖 (Markdown版)"
+            }
+          },
+          {
+            "id": "b74195f84bca888b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "專案管理輕鬆學/wiki/study/📅 PMP 6週衝刺計畫 (6月下旬考試).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "📅 PMP 6週衝刺計畫 (6月下旬考試)"
+            }
+          },
+          {
+            "id": "b5f1845cf376863b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "專案管理輕鬆學/wiki/study/📋 每週學習任務追踪表.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "📋 每週學習任務追踪表"
+            }
+          },
+          {
+            "id": "6fcb02da39a72784",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "專案管理輕鬆學/wiki/study/📝 錯題本範本.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "📝 錯題本範本"
+            }
+          },
+          {
+            "id": "c6313f466a5d262c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PMP備考/UDEMY CH.1 PMP TERMS/專案限制 Project constraints.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "專案限制 Project constraints"
+            }
+          },
+          {
+            "id": "daf7e933f7a1164d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PMP備考/專案管理原則五：系統思維 (Systems Thinking).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "專案管理原則五：系統思維 (Systems Thinking)"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "390d3530a963debe",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6b49bc1edc3b9d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b87a95e9c4759e59",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "fbb94a07e5745155",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "7c27e9d42d6ae7f6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "書籤"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 302.5
+  },
+  "right": {
+    "id": "f8a9cadce31631a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5426dfade7a2c45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "514a4ac9928133c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向連結"
+            }
+          },
+          {
+            "id": "f74fda9b0ade120e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "d6100503945d2a00",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "8e7beaf3b9b5be8e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "cb410c7fea009a54",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PMP備考/專案管理原則五：系統思維 (Systems Thinking).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "專案管理原則五：系統思維 (Systems Thinking) 的大綱"
+            }
+          },
+          {
+            "id": "86ccdb6741a54bdc",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 619.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "bases:建立新的 base": false,
+      "claudian:Open Claudian": false
+    }
+  },
+  "active": "daf7e933f7a1164d",
+  "lastOpenFiles": [
+    "PMP備考/專案管理原則三：有效與利害關係人互動 (Stakeholder Engagement).md",
+    "PMP備考/專案管理原則五：系統思維 (Systems Thinking).md",
+    "PMP備考/專案管理原則四：專注於價值 (Focus on Value).md",
+    "PMP備考/專案管理原則.md",
+    "PMP備考/系統思維.md.crswap",
+    "PMP備考/Untitled 2.md.crswap",
+    "docs/superpowers/plans/2026-05-05-pmp-flashcard-implementation-plan.md",
+    "docs/superpowers/plans",
+    "PMP備考/Untitled 2.md",
+    "PMP備考/專案管理原則二：建立協作專案團隊環境 (TEAM).md",
+    "PMP備考/Untitled 1.md.crswap",
+    "docs/superpowers/specs/2026-05-05-pmp-flashcard-system-design.md",
+    "docs/superpowers/specs",
+    "docs/superpowers",
+    "docs",
+    "PMP備考/專案管理與一般管理原則的比較.md",
+    "PMP備考/PMI 職業道德與專業行為準則.md",
+    "PMP備考/-hovernotes.base",
+    "PMP備考/-video-screenshots.base",
+    "PMP備考/-video-screenshots-without-notes.base",
+    "PMP備考/UDEMY CH.1 PMP TERMS/什麼是專案管理.md",
+    "PMP備考/專案管理原則一：管家精神　Stewardship.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/專案組合管理 Portfolio management.md",
+    "PMP備考/管理職責.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/專案組合管理.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/專案帶來改變.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/專案限制 Project constraints.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/專案負責人.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/專案治理 Project governance.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/專案生命週期.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/問題、風險、假設與限制.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/計劃管理 Program management.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/利害關係人.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/里程碑 vs 任務持續時間（Task Duration）.md",
+    "PMP備考/UDEMY CH.1 PMP TERMS/何謂專案價值 (Value of Projects).md",
+    "專案管理輕鬆學/wiki/study/PMP學習路線圖.canvas",
+    "PMP備考/hover-notes-images/screenshot-01KQME25G7RX4HSCMAAGME1KBS.png",
+    "PMP備考/hover-notes-images/screenshot-01KQFPF85Y3CQ7HKAFHXB1VB93.png",
+    "PMP備考/hover-notes-images/screenshot-01KQCRXF0S7AW68ZJQSYQGQ8QE.png",
+    "PMP備考/hover-notes-images/screenshot-01KQC53GC73GMVN83KH9500W9M.png",
+    "PMP備考/hover-notes-images/screenshot-01KQC3392MC59PVKF3C3AJRNDQ.png",
+    "PMP備考/hover-notes-images/screenshot-01KQC0FJT3K0FVNWQ4Y0AYTQGH.png",
+    "附件/Pasted image 20260412195622.png",
+    "附件/Pasted image 20260411185657.png",
+    "附件/Pasted image 20260411185651.png",
+    "附件/Pasted image 20260411185515.png"
+  ]
+}
