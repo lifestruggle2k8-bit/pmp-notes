@@ -77,11 +77,9 @@ export const Card: React.FC<CardProps> = ({ card, onRate, isLoading = false }) =
           Difficulty: <span className="font-semibold">{card.difficulty}</span> ·
           Reviews: <span className="font-semibold">{card.totalReviews}</span>
         </div>
-        {card.lastReviewDate && (
-          <div>
-            Next review: <span className="font-semibold">{new Date(card.nextReviewDate).toLocaleDateString()}</span>
-          </div>
-        )}
+        <div>
+          Next review: <span className="font-semibold">{new Date(card.nextReviewDate).toLocaleDateString()}</span>
+        </div>
       </div>
     </div>
   );
