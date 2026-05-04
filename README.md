@@ -1,310 +1,111 @@
-# PMP Intelligent Flashcard System
+# PMP 智能閃卡學習系統
 
-A cross-platform intelligent flashcard learning system for PMP (Project Management Professional) certification preparation with spaced-repetition algorithms, GitHub auto-sync, and real-time statistics.
+跨平台智能閲卡複習系統，支援 GitHub 自動同步、間隔重複演算法、實時統計。
 
-## Project Structure
+## 🎯 核心功能
+
+### MVP 版本（第 1 週）
+
+- ✅ **卡片管理** - 創建、編輯、刪除卡片
+- ✅ **複習系統** - 互動式卡片翻轉複習
+- ✅ **SM-2 演算法** - 智能間隔重複
+- ✅ **GitHub 自動同步** - 從 Markdown 筆記自動生成卡片
+- ✅ **REST API** - 完整的後端 API
+- ✅ **狀態管理** - Zustand + React Query
+- ✅ **響應式設計** - Tailwind CSS
+
+## 🏗️ 項目結構
 
 ```
-.
-├── backend/                 # Node.js + Express + TypeScript
-│   ├── src/
-│   │   ├── index.ts        # Express server entry point
-│   │   ├── config/         # Configuration files
-│   │   ├── routes/         # API endpoints
-│   │   ├── services/       # Business logic
-│   │   ├── middleware/     # Express middleware
-│   │   ├── models/         # Data models
-│   │   └── types/          # TypeScript type definitions
-│   ├── tests/              # Unit & integration tests
-│   ├── prisma/             # Database schema & migrations
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── .env.example
-│
-├── frontend/               # React 18 + TypeScript
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── store/          # Zustand state management
-│   │   ├── api/            # API client
-│   │   ├── types/          # TypeScript types
-│   │   ├── utils/          # Utility functions
-│   │   ├── App.tsx         # Root component
-│   │   └── index.tsx       # Entry point
-│   ├── public/             # Static assets
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── tailwind.config.js
-│   └── .env.example
-│
-├── .github/
-│   └── workflows/          # GitHub Actions CI/CD
-│
-├── .gitignore
-└── README.md
+project/
+├── frontend/          # React 前端應用
+├── backend/           # Node.js/Express 後端
+├── DEPLOYMENT.md      # 部署指南
+└── README.md          # 本文件
 ```
 
-## Tech Stack
+## 🚀 快速開始
 
-**Backend:**
-- Node.js + Express
-- TypeScript
-- PostgreSQL + Prisma ORM
-- JWT Authentication
-- Jest for testing
+### 後端
 
-**Frontend:**
-- React 18
-- TypeScript
-- React Router v6
-- Zustand (state management)
-- React Query (data fetching)
-- Tailwind CSS
-- Workbox (PWA support)
-
-**Infrastructure:**
-- Vercel (Frontend deployment)
-- Railway (Backend deployment)
-- PostgreSQL (Database)
-- GitHub Actions (CI/CD)
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-- PostgreSQL 12+
-- Git
-
-### Backend Setup
-
-1. Navigate to backend directory:
-   ```bash
-   cd backend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create `.env` file from `.env.example`:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Configure environment variables in `.env`
-
-5. Set up the database and run migrations:
-   ```bash
-   npx prisma migrate dev --name init
-   ```
-
-6. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-   The backend will run on `http://localhost:3000`
-
-### Frontend Setup
-
-1. Navigate to frontend directory:
-   ```bash
-   cd frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create `.env.local` file from `.env.example`:
-   ```bash
-   cp .env.example .env.local
-   ```
-
-4. Configure `REACT_APP_API_URL` to point to your backend
-
-5. Start the development server:
-   ```bash
-   npm start
-   ```
-
-   The frontend will run on `http://localhost:3000` (React dev server may use port 3001)
-
-## API Endpoints
-
-### Health Check
-- `GET /health` - System health status
-
-### Cards
-- `GET /api/cards` - Get all cards (authenticated)
-- `GET /api/cards/today` - Get today's review cards
-- `POST /api/cards` - Create a new card
-- `PUT /api/cards/:id` - Update a card
-- `DELETE /api/cards/:id` - Delete a card
-
-### Review
-- `POST /api/review/submit` - Submit a review result
-- `GET /api/review/history/:cardId` - Get review history for a card
-
-### Statistics
-- `GET /api/stats` - Get learning statistics (coming soon)
-
-### Webhooks
-- `POST /webhook/sync` - GitHub webhook for auto-sync
-- `POST /webhook/manual` - Manual sync endpoint
-
-## Features
-
-### MVP (Week 1)
-- ✅ Flashcard creation and management
-- ✅ Spaced repetition learning algorithm
-- ✅ Review session tracking
-- ✅ Basic statistics dashboard
-- ✅ GitHub auto-sync for card generation
-- ✅ Responsive UI
-
-### Planned (Week 2+)
-- PWA offline support
-- Advanced statistics and charts
-- Card editor with rich formatting
-- User settings and preferences
-- Performance optimizations
-- Mobile-optimized interface
-
-## Development Commands
-
-### Backend
 ```bash
 cd backend
-
-# Development
+npm install
+cp .env.example .env
+npx prisma migrate dev
 npm run dev
-
-# Build
-npm run build
-
-# Tests
-npm test
-
-# Database
-npx prisma migrate dev       # Run migrations
-npx prisma studio          # Open Prisma Studio GUI
-npx prisma generate        # Generate Prisma client
 ```
 
-### Frontend
+後端運行在 http://localhost:3000
+
+### 前端
+
 ```bash
 cd frontend
-
-# Development
+npm install
+cp .env.example .env
 npm start
-
-# Build
-npm run build
-
-# Tests
-npm test
-
-# Eject (one-way operation)
-npm run eject
 ```
 
-## Environment Variables
+前端運行在 http://localhost:3000
 
-### Backend (.env)
+## 📚 API 文檔
+
+### 卡片 API
+
+```
+GET    /api/cards           # 取得所有卡片
+GET    /api/cards/today     # 取得今日待複習卡片
+POST   /api/cards           # 創建卡片
+PUT    /api/cards/:id       # 更新卡片
+DELETE /api/cards/:id       # 刪除卡片
+```
+
+### 複習 API
+
+```
+POST   /api/review/submit       # 提交複習結果
+GET    /api/review/history/:id  # 取得複習歷史
+GET    /api/review/stats        # 取得複習統計
+```
+
+## 🔧 技術棧
+
+| 層級 | 技術 |
+|------|------|
+| **前端框架** | React 18 + TypeScript |
+| **UI 庫** | Tailwind CSS |
+| **狀態管理** | Zustand + React Query |
+| **後端框架** | Node.js + Express |
+| **數據庫** | PostgreSQL |
+| **ORM** | Prisma |
+| **認證** | JWT |
+| **部署** | Vercel (前端) + Railway (後端) |
+
+## 📝 環境變量
+
+### 後端
+
 ```env
+DATABASE_URL=postgresql://user:password@localhost:5432/pmp_flashcards
+GITHUB_TOKEN=your_github_token
+GITHUB_REPO=username/repo
 PORT=3000
 NODE_ENV=development
-DATABASE_URL=postgresql://user:password@localhost:5432/pmp_flashcards
 JWT_SECRET=your_secret_key
-GITHUB_TOKEN=your_github_token
-GITHUB_REPO=your_username/repo
-GITHUB_WEBHOOK_SECRET=webhook_secret
 ```
 
-### Frontend (.env.local)
+### 前端
+
 ```env
 REACT_APP_API_URL=http://localhost:3000
-REACT_APP_GITHUB_REPO=your_username/pmp-cards
 ```
 
-## Testing
+## 📖 詳細部署指南
 
-### Unit Tests
-```bash
-cd backend
-npm test -- --testPathPattern=cardGenerator
-```
+請參考 [DEPLOYMENT.md](./DEPLOYMENT.md) 了解完整的部署步驟。
 
-### Integration Tests
-```bash
-cd backend
-npm test -- --testPathPattern=api
-```
+## 📄 許可證
 
-## Deployment
+MIT License
 
-### Vercel (Frontend)
-```bash
-vercel deploy
-```
-
-### Railway (Backend)
-1. Create Railway account
-2. Connect GitHub repository
-3. Set environment variables
-4. Deploy automatically
-
-## Git Workflow
-
-```bash
-# Create a feature branch
-git checkout -b feature/task-name
-
-# Make changes and commit
-git add .
-git commit -m "feat: describe changes"
-
-# Push to remote
-git push origin feature/task-name
-
-# Create pull request on GitHub
-```
-
-## Contributing
-
-1. Create a feature branch from `main`
-2. Make changes following TypeScript strict mode
-3. Ensure tests pass
-4. Commit with clear messages
-5. Push and create a pull request
-
-## License
-
-MIT
-
-## Project Status
-
-**Current Phase:** Week 1 - MVP Development
-**Last Updated:** May 4, 2026
-
-### Week 1 Milestones
-- [x] Task 1: Project initialization and environment setup
-- [ ] Task 2: Database setup with Prisma
-- [ ] Task 3: Backend authentication and API framework
-- [ ] Task 4: Card generation engine
-- [ ] Task 5: Frontend basic pages
-- [ ] Task 6: Cards API endpoints
-- [ ] Task 7: Review recording and algorithm
-- [ ] Task 8: GitHub webhook sync
-- [ ] Task 9: Frontend API client and state management
-- [ ] Task 10: MVP deployment and testing
-
-## Support
-
-For issues and questions, please refer to the implementation plan in `docs/superpowers/plans/`.
