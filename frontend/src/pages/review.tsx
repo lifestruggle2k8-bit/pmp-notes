@@ -1,82 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { useTodayCards, useSubmitReview } from '../hooks/useCards';
 import { Card as CardType } from '../types';
 import { Card } from '../components/Card';
 
 export const ReviewPage: React.FC = () => {
-  const [cards, setCards] = useState<CardType[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [loading, setLoading] = useState(true);
   const [reviewCompleted, setReviewCompleted] = useState(false);
   const [reviewCount, setReviewCount] = useState(0);
 
-  useEffect(() => {
-    // TODO: Load today's cards from API
-    setLoading(false);
-    // Mock data for now
-    setCards([
-      {
-        id: '1',
-        question: 'What is the primary purpose of the PMP certification?',
-        answer:
-          'The PMP (Project Management Professional) certification validates the knowledge and skills required to lead and manage projects effectively across various industries.',
-        chapter: 'CH.1',
-        domain: 'Domain I',
-        tags: ['certification', 'foundation'],
-        difficulty: 'easy',
-        totalReviews: 5,
-        correctCount: 4,
-        nextReviewDate: '2026-05-10',
-        interval: 2.5,
-        easeFactor: 2.5,
-        createdAt: '2026-05-01',
-        updatedAt: '2026-05-04'
-      },
-      {
-        id: '2',
-        question: 'Define project scope in project management.',
-        answer:
-          'Project scope is the work that must be performed to deliver a product, service, or result with the specified features and functions. It defines what is included and excluded from the project.',
-        chapter: 'CH.2',
-        domain: 'Domain II',
-        tags: ['scope', 'planning'],
-        difficulty: 'medium',
-        totalReviews: 3,
-        correctCount: 2,
-        nextReviewDate: '2026-05-06',
-        interval: 1.8,
-        easeFactor: 2.3,
-        createdAt: '2026-05-02',
-        updatedAt: '2026-05-04'
-      },
-      {
-        id: '3',
-        question: 'What are the five process groups in project management?',
-        answer:
-          'The five process groups are: Initiating, Planning, Executing, Monitoring and Controlling, and Closing. They represent the phases of the project lifecycle.',
-        chapter: 'CH.1',
-        domain: 'Domain I',
-        tags: ['processes', 'framework'],
-        difficulty: 'medium',
-        totalReviews: 2,
-        correctCount: 1,
-        nextReviewDate: '2026-05-07',
-        interval: 1.3,
-        easeFactor: 2.2,
-        createdAt: '2026-05-01',
-        updatedAt: '2026-05-04'
-      }
-    ]);
-  }, []);
+  const { cards, isLoading } = useTodayCards();
+  const submitReview = useSubmitReview();
 
   const handleRate = async (quality: number) => {
-    // TODO: Submit review result to API
-    console.log(`Rated card ${cards[currentIndex].id} with quality ${quality}`);
-    setReviewCount(reviewCount + 1);
+    if (cards.length === 0 || isLoading) return;
 
-    if (currentIndex < cards.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    } else {
-      setReviewCompleted(true);
+    const currentCard = cards[currentIndex];
+
+    try {
+      await submitReview.mutateAsync({
+        cardId: currentCard.id,
+        quality,
+        timeSpent: 0
+      });
+
+      setReviewCount(reviewCount + 1);
+
+      if (currentIndex < cards.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        setReviewCompleted(true);
+      }
+    } catch (error) {
+      console.error('Failed to submit review:', error);
+      alert('Failed to submit review. Please try again.');
     }
   };
 
@@ -86,7 +42,7 @@ export const ReviewPage: React.FC = () => {
     setReviewCount(0);
   };
 
-  if (loading) {
+  if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <p className="text-lg text-gray-600">Loading cards...</p>
@@ -177,7 +133,7 @@ export const ReviewPage: React.FC = () => {
         <Card
           card={currentCard}
           onRate={handleRate}
-          isLoading={false}
+          isLoading={submitReview.isPending}
         />
 
         {/* Footer Info */}
