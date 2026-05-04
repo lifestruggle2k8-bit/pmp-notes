@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { connectDatabase, disconnectDatabase } from './config/database';
+import { authMiddleware } from './middleware/auth';
 
 dotenv.config();
 
@@ -32,8 +33,10 @@ app.get('/', (req, res) => {
   });
 });
 
-// Protected routes will be added here with authMiddleware
-// app.use('/api', authMiddleware);
+// Protected routes with authMiddleware
+app.use('/api', authMiddleware);
+
+// Route handlers will be added here
 // app.use('/api/cards', cardsRouter);
 // app.use('/api/review', reviewRouter);
 // app.use('/api/stats', statsRouter);
