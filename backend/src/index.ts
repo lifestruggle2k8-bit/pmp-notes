@@ -5,6 +5,7 @@ import { connectDatabase, disconnectDatabase } from './config/database';
 import { authMiddleware } from './middleware/auth';
 import cardsRouter from './routes/cards';
 import reviewRouter from './routes/review';
+import syncRouter from './routes/sync';
 
 dotenv.config();
 
@@ -43,11 +44,8 @@ app.use('/api/cards', cardsRouter);
 app.use('/api/review', reviewRouter);
 // app.use('/api/stats', statsRouter);
 
-// Webhook endpoint (no auth required)
-app.post('/webhook/sync', async (req, res) => {
-  // GitHub sync webhook - to be implemented
-  res.json({ received: true });
-});
+// Webhook endpoints (no auth required)
+app.use('/webhook', syncRouter);
 
 // Error handler middleware
 app.use(
