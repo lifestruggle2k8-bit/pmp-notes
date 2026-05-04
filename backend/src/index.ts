@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import { connectDatabase, disconnectDatabase } from './config/database';
 
 dotenv.config();
 
@@ -61,6 +62,7 @@ app.use((req, res) => {
 // Server startup
 const start = async () => {
   try {
+    await connectDatabase();
     app.listen(PORT, () => {
       console.log(`✓ Server running on port ${PORT}`);
       console.log(`✓ Environment: ${process.env.NODE_ENV || 'development'}`);
@@ -74,6 +76,7 @@ const start = async () => {
 // Graceful shutdown
 process.on('SIGINT', async () => {
   console.log('Shutting down...');
+  await disconnectDatabase();
   process.exit(0);
 });
 

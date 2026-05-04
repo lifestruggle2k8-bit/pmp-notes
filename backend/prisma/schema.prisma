@@ -1,0 +1,86 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String     @id @default(cuid())
+  email     String     @unique
+  username  String     @unique
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  cards     Card[]
+  reviews   ReviewRecord[]
+}
+
+model Card {
+  id          String      @id @default(cuid())
+  userId      String
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  sourceFile  String      // 來源筆記文件名
+  chapter     String      // CH.1, CH.2 等
+  domain      String      // Domain I, II, III
+
+  question    String
+  answer      String      @db.Text
+  tags        String[]    @default([])
+  type        String      // definition, exam, summary
+  difficulty  String      @default("medium") // easy, medium, hard
+
+  // 複習統計
+  totalReviews     Int     @default(0)
+  correctCount     Int     @default(0)
+  lastReviewDate   DateTime?
+  nextReviewDate   DateTime @default(now())
+
+  // 間隔重複參數
+  interval         Float   @default(1) // 天數
+  easeFactor       Float   @default(2.5)
+
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  reviews     ReviewRecord[]
+
+  @@index([userId])
+  @@index([nextReviewDate])
+  @@index([chapter])
+  @@index([domain])
+}
+
+model ReviewRecord {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  cardId    String
+  card      Card     @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  quality   Int      // 0=错, 1=勉强, 2=ok, 3=简单
+  timeSpent Int      // 秒数
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([cardId])
+  @@index([createdAt])
+}
+
+model SyncLog {
+  id          String    @id @default(cuid())
+  fileName    String
+  status      String    // success, failed
+  cardsGenerated Int    @default(0)
+  error       String?
+
+  createdAt   DateTime  @default(now())
+}
