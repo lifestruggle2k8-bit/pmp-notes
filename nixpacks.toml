@@ -1,3 +1,6 @@
+﻿[providers]
+language = "nodejs"
+
 [phases.setup]
 nixpkgs = ["nodejs_20"]
 
