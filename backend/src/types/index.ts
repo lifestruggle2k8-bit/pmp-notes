@@ -141,7 +141,8 @@ export interface PaginatedResponse<T> {
   totalPages: number;
 }
 
-export default {
+// Re-export all types for convenience
+export type {
   CardInput,
   CardResponse,
   ReviewInput,
