@@ -1,11 +1,15 @@
 ﻿FROM node:20-alpine
 
-WORKDIR /app
+WORKDIR /app/backend
 
-COPY . .
+COPY ./backend/package*.json ./
 
-RUN cd backend && npm install && npm run build
+RUN npm install
+
+COPY ./backend ./
+
+RUN npm run build
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "cd backend && npm start"]
+CMD ["npm", "start"]
