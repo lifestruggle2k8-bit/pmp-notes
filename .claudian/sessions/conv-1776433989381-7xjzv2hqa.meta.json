@@ -4,8 +4,8 @@
   "title": "good to work",
   "titleGenerationStatus": "failed",
   "createdAt": 1776433989384,
-  "updatedAt": 1777977463072,
-  "lastResponseAt": 1777977463072,
+  "updatedAt": 1777984410882,
+  "lastResponseAt": 1777984410882,
   "sessionId": "3bab4eab-d930-4f7f-843b-4bfef815f0c0",
   "providerState": {
     "providerSessionId": "3bab4eab-d930-4f7f-843b-4bfef815f0c0",
@@ -3661,12 +3661,12 @@
   },
   "usage": {
     "model": "haiku",
-    "inputTokens": 10,
-    "cacheCreationInputTokens": 1857,
-    "cacheReadInputTokens": 102430,
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 635,
+    "cacheReadInputTokens": 70121,
     "contextWindow": 200000,
-    "contextTokens": 104297,
-    "percentage": 52,
+    "contextTokens": 70764,
+    "percentage": 35,
     "contextWindowIsAuthoritative": true
   }
 }
