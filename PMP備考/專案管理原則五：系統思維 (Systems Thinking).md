@@ -1,15 +1,17 @@
 ---
 title: "Course: PMP Certification Exam Prep Course 35 PDU Contact Hours/PDU | Udemy"
-description: >-
-  Get your PMP Certification with this course. Fully updated for the Current PMP
-  Exam
+description: Get your PMP Certification with this course. Fully updated for the Current PMP Exam
 author: Udemy
-source: >-
-  https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/30426562#overview
-created: "2026-05-04"
+source: https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/30426562#overview
+created: 2026-05-04
 tags:
   - hover-notes
   - udemy
+  - "#flashcards"
+  - "#review"
+sr-due: 2026-09-02
+sr-interval: 120
+sr-ease: 270
 ---
 # 專案並非孤立任務的集合，而是一個由多個獨立組件（風險、品質、範疇、時程、成本）組成的系統。系統思維的核心在於建立一個機制，讓這些組件能有效互動，並以統一的方式產生交付成果。
 

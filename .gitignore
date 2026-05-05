@@ -73,3 +73,15 @@ out/
 *.njsproj
 *.sln
 *.sw?
+
+# Obsidian system files (device-specific)
+.obsidian/cache/
+.obsidian/plugins/obsidian-spaced-repetition/
+.obsidian/community-plugins.json
+.obsidian/workspace.json
+.claudian/sessions/
+
+# Keep these for sync across devices
+# .obsidian/snippets/
+# .obsidian/themes/
+# .obsidian/plugins/*/manifest.json
