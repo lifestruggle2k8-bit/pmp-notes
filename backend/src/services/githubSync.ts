@@ -41,10 +41,8 @@ export async function syncCardsFromGitHub(fileName: string, userId: string) {
     // 生成卡片
     const result = await generateCardsFromMarkdown(
       userId,
-      fileName,
       content,
-      chapter,
-      domain
+      fileName
     );
 
     // 記錄同步

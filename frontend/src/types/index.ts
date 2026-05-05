@@ -56,3 +56,4 @@ export interface ApiError {
   message?: string;
   status?: number;
 }
+export type ReviewInput = ReviewSession;

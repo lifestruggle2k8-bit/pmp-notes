@@ -5,6 +5,7 @@ import { connectDatabase, disconnectDatabase } from './config/database';
 import { authMiddleware } from './middleware/auth';
 import cardsRouter from './routes/cards';
 import reviewRouter from './routes/review';
+import statsRouter from './routes/stats';
 import syncRouter from './routes/sync';
 
 dotenv.config();
@@ -42,7 +43,7 @@ app.use('/api', authMiddleware);
 // Route handlers
 app.use('/api/cards', cardsRouter);
 app.use('/api/review', reviewRouter);
-// app.use('/api/stats', statsRouter);
+app.use('/api/stats', statsRouter);
 
 // Webhook endpoints (no auth required)
 app.use('/webhook', syncRouter);

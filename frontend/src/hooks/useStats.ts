@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { reviewAPI } from '../api/client';
+import client from '../api/client';
 
 export interface ReviewStats {
   todayReviews: number;
@@ -8,8 +9,24 @@ export interface ReviewStats {
   accuracy: number;
 }
 
+export interface StatsData {
+  totalCards: number;
+  masteredCards: number;
+  learningCards: number;
+  newCards: number;
+  overdueCards: number;
+  totalReviews: number;
+  correctReviews: number;
+  masteryPercentage: number;
+  avgTimePerCard: number;
+  reviewsPerDay: number;
+  byDomain: Record<string, any>;
+  byChapter: Record<string, any>;
+  trends: any[];
+}
+
 /**
- * Hook to fetch review statistics
+ * Hook to fetch complete review statistics
  */
 export function useReviewStats() {
   const query = useQuery({
@@ -25,6 +42,88 @@ export function useReviewStats() {
     isLoading: query.isLoading,
     error: query.error as Error | null,
     refetch: query.refetch
+  };
+}
+
+/**
+ * Hook to fetch comprehensive statistics
+ */
+export function useStats() {
+  const query = useQuery({
+    queryKey: ['stats'],
+    queryFn: async () => {
+      const res = await client.get('/stats');
+      return res.data as StatsData;
+    },
+    staleTime: 1000 * 60 * 5, // 5 minutes
+    refetchInterval: 1000 * 60 * 10 // 10 minutes
+  });
+
+  return {
+    stats: query.data,
+    isLoading: query.isLoading,
+    error: query.error as Error | null,
+    refetch: query.refetch
+  };
+}
+
+/**
+ * Hook to fetch statistics by domain
+ */
+export function useStatsByDomain() {
+  const query = useQuery({
+    queryKey: ['stats:domain'],
+    queryFn: async () => {
+      const res = await client.get('/stats/domain');
+      return res.data;
+    },
+    staleTime: 1000 * 60 * 5
+  });
+
+  return {
+    stats: query.data || [],
+    isLoading: query.isLoading,
+    error: query.error as Error | null
+  };
+}
+
+/**
+ * Hook to fetch statistics by chapter
+ */
+export function useStatsByChapter() {
+  const query = useQuery({
+    queryKey: ['stats:chapter'],
+    queryFn: async () => {
+      const res = await client.get('/stats/chapter');
+      return res.data;
+    },
+    staleTime: 1000 * 60 * 5
+  });
+
+  return {
+    stats: query.data || [],
+    isLoading: query.isLoading,
+    error: query.error as Error | null
+  };
+}
+
+/**
+ * Hook to fetch trends data
+ */
+export function useTrends() {
+  const query = useQuery({
+    queryKey: ['stats:trends'],
+    queryFn: async () => {
+      const res = await client.get('/stats/trends');
+      return res.data;
+    },
+    staleTime: 1000 * 60 * 5
+  });
+
+  return {
+    trends: query.data || [],
+    isLoading: query.isLoading,
+    error: query.error as Error | null
   };
 }
 

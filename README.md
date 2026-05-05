@@ -1,111 +1,352 @@
-# PMP 智能閃卡學習系統
+# PMP Intelligent Flashcard System
 
-跨平台智能閲卡複習系統，支援 GitHub 自動同步、間隔重複演算法、實時統計。
+A cross-platform intelligent spaced repetition learning system with GitHub auto-sync, advanced analytics, offline support, and PWA capabilities.
 
-## 🎯 核心功能
+## Status: Complete (All 16 Tasks Implemented)
 
-### MVP 版本（第 1 週）
+✅ **MVP Features** (Week 1)
+✅ **Advanced Features** (Week 2)  
+✅ **Production Ready**
 
-- ✅ **卡片管理** - 創建、編輯、刪除卡片
-- ✅ **複習系統** - 互動式卡片翻轉複習
-- ✅ **SM-2 演算法** - 智能間隔重複
-- ✅ **GitHub 自動同步** - 從 Markdown 筆記自動生成卡片
-- ✅ **REST API** - 完整的後端 API
-- ✅ **狀態管理** - Zustand + React Query
-- ✅ **響應式設計** - Tailwind CSS
+## Core Features
 
-## 🏗️ 項目結構
+### Learning System
+- Interactive flashcard review with flip animation
+- SM-2 spaced repetition algorithm
+- Daily review goals and progress tracking
+- Support for 4-level rating (Again, Hard, Good, Easy)
+- Automatic card generation from markdown notes
 
-```
-project/
-├── frontend/          # React 前端應用
-├── backend/           # Node.js/Express 後端
-├── DEPLOYMENT.md      # 部署指南
-└── README.md          # 本文件
-```
+### Content Management
+- Create, edit, delete flashcards
+- Bulk operations and card management
+- Search and filter cards by domain/chapter/difficulty
+- Tag-based organization
+- Support for multiple content types
 
-## 🚀 快速開始
+### Statistics & Analytics
+- Comprehensive dashboard with key metrics
+- Domain and chapter-wise breakdown
+- 30-day learning trends
+- Accuracy tracking and performance metrics
+- Exportable data for personal tracking
 
-### 後端
+### Offline & PWA
+- Full offline support with Service Worker
+- IndexedDB caching for cards and progress
+- Automatic sync when back online
+- Installable as web app on devices
+- Background sync for offline reviews
+
+### Advanced Features
+- Customizable settings (daily goals, review mode, theme)
+- GitHub webhook integration for auto-sync
+- API-first architecture
+- Performance optimizations (memoization, code splitting)
+- Error reporting and analytics
+
+## Documentation
+
+Complete documentation is provided in multiple formats:
+
+| Document | Purpose |
+|----------|---------|
+| [USER_GUIDE.md](./USER_GUIDE.md) | For end users - how to use the system |
+| [DEVELOPER.md](./DEVELOPER.md) | For developers - architecture and development |
+| [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) | Complete API reference |
+| [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) | Common issues and solutions |
+
+## Quick Start
+
+### Backend
 
 ```bash
 cd backend
 npm install
 cp .env.example .env
+
+# Update .env with your database URL
 npx prisma migrate dev
+
+# Start development server
 npm run dev
 ```
 
-後端運行在 http://localhost:3000
+Backend runs at `http://localhost:3000`
 
-### 前端
+### Frontend
 
 ```bash
 cd frontend
 npm install
 cp .env.example .env
+
+# Update .env with API URL if needed
 npm start
 ```
 
-前端運行在 http://localhost:3000
+Frontend runs at `http://localhost:3000`
 
-## 📚 API 文檔
-
-### 卡片 API
+## Project Structure
 
 ```
-GET    /api/cards           # 取得所有卡片
-GET    /api/cards/today     # 取得今日待複習卡片
-POST   /api/cards           # 創建卡片
-PUT    /api/cards/:id       # 更新卡片
-DELETE /api/cards/:id       # 刪除卡片
+.
+├── backend/                     # Node.js/Express API
+│   ├── src/
+│   │   ├── routes/             # API endpoints
+│   │   ├── services/           # Business logic
+│   │   ├── middleware/         # Middleware (auth, etc)
+│   │   └── types/              # TypeScript definitions
+│   ├── prisma/
+│   │   └── schema.prisma       # Database schema
+│   └── tests/                  # Unit & integration tests
+│
+├── frontend/                   # React application
+│   ├── src/
+│   │   ├── components/         # React components
+│   │   ├── pages/              # Page components
+│   │   ├── hooks/              # Custom hooks
+│   │   ├── api/                # API client
+│   │   ├── store/              # Zustand state
+│   │   └── utils/              # Utilities
+│   ├── public/
+│   │   ├── service-worker.ts   # PWA service worker
+│   │   ├── manifest.json       # PWA manifest
+│   │   └── offline.html        # Offline fallback
+│   └── tests/                  # Component tests
+│
+├── USER_GUIDE.md               # User documentation
+├── DEVELOPER.md                # Developer guide
+├── API_DOCUMENTATION.md        # API reference
+└── TROUBLESHOOTING.md          # Troubleshooting guide
 ```
 
-### 複習 API
+## Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| **Frontend** | React 18, TypeScript, Tailwind CSS |
+| **State** | Zustand, React Query |
+| **Backend** | Node.js, Express, TypeScript |
+| **Database** | PostgreSQL, Prisma ORM |
+| **Auth** | JWT tokens |
+| **PWA** | Service Workers, IndexedDB, Workbox |
+| **Deployment** | Vercel (frontend), Railway (backend) |
+
+## API Overview
+
+### Key Endpoints
 
 ```
-POST   /api/review/submit       # 提交複習結果
-GET    /api/review/history/:id  # 取得複習歷史
-GET    /api/review/stats        # 取得複習統計
+# Cards
+GET    /api/cards              # List all cards
+GET    /api/cards/today        # Get today's cards
+POST   /api/cards              # Create card
+PATCH  /api/cards/:id          # Update card
+DELETE /api/cards/:id          # Delete card
+
+# Reviews
+POST   /api/review/submit      # Submit review
+GET    /api/review/history/:id # Get history
+
+# Statistics
+GET    /api/stats              # Overall stats
+GET    /api/stats/domain       # Stats by domain
+GET    /api/stats/chapter      # Stats by chapter
+GET    /api/stats/trends       # Learning trends
+
+# Webhooks
+POST   /webhook/sync/github    # GitHub webhook
+POST   /webhook/sync/manual    # Manual sync
 ```
 
-## 🔧 技術棧
+See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) for complete reference.
 
-| 層級 | 技術 |
-|------|------|
-| **前端框架** | React 18 + TypeScript |
-| **UI 庫** | Tailwind CSS |
-| **狀態管理** | Zustand + React Query |
-| **後端框架** | Node.js + Express |
-| **數據庫** | PostgreSQL |
-| **ORM** | Prisma |
-| **認證** | JWT |
-| **部署** | Vercel (前端) + Railway (後端) |
+## Environment Variables
 
-## 📝 環境變量
-
-### 後端
+### Backend (.env)
 
 ```env
 DATABASE_URL=postgresql://user:password@localhost:5432/pmp_flashcards
+JWT_SECRET=your_secret_key
 GITHUB_TOKEN=your_github_token
 GITHUB_REPO=username/repo
+GITHUB_WEBHOOK_SECRET=your_webhook_secret
 PORT=3000
 NODE_ENV=development
-JWT_SECRET=your_secret_key
 ```
 
-### 前端
+### Frontend (.env)
 
 ```env
 REACT_APP_API_URL=http://localhost:3000
 ```
 
-## 📖 詳細部署指南
+## Features by Task
 
-請參考 [DEPLOYMENT.md](./DEPLOYMENT.md) 了解完整的部署步驟。
+### Task 11: Statistics Dashboard
+- Real-time statistics calculation
+- Domain and chapter breakdown
+- 30-day trend analysis
+- Custom chart components
+- API endpoints for metrics
 
-## 📄 許可證
+### Task 12: PWA Offline Support
+- Service Worker implementation
+- IndexedDB storage
+- Offline card caching
+- Automatic sync on reconnect
+- Installable web app
 
-MIT License
+### Task 13: Card Editor & Management
+- Create/edit/delete cards
+- Bulk operations
+- Search and filtering
+- Tag management
+- Difficulty classification
+
+### Task 14: Settings & Preferences
+- Daily goal configuration
+- Review mode selection
+- Theme preferences
+- Feature toggles
+- Data export/import
+
+### Task 15: Performance Optimization
+- React.memo component optimization
+- useCallback/useMemo hooks
+- Lazy loading and code splitting
+- API response caching
+- Image lazy loading
+
+### Task 16: Documentation
+- User guide with tutorials
+- Developer guide with setup
+- Complete API documentation
+- Troubleshooting guide
+- Code examples and best practices
+
+## Key Features Explained
+
+### Spaced Repetition (SM-2)
+The system implements the Supermemo 2 algorithm:
+- Easy cards (quality=3): interval increases 2.5x
+- Good cards (quality=2): interval increases 1.3x
+- Hard cards (quality=1): interval increases 1.1x
+- Failed cards (quality=0): resets to 1 day
+
+### Offline-First Architecture
+- Cards cached locally with Service Worker
+- Reviews recorded in IndexedDB
+- Automatic sync when online
+- No data loss in offline mode
+
+### Responsive Design
+- Works on desktop, tablet, mobile
+- Progressive Web App features
+- Touch-optimized interface
+- Dark/light theme support
+
+## Performance Metrics
+
+Target Web Vitals:
+- **LCP** (Largest Contentful Paint): < 2.5s
+- **FID** (First Input Delay): < 100ms
+- **CLS** (Cumulative Layout Shift): < 0.1
+
+Optimizations:
+- Component memoization
+- API response caching
+- Code splitting by route
+- Image lazy loading
+- Debounced/throttled events
+
+## Testing
+
+```bash
+# Backend tests
+cd backend
+npm test
+
+# Frontend tests
+cd frontend
+npm test
+```
+
+## Deployment
+
+### Frontend (Vercel)
+```bash
+npm install -g vercel
+cd frontend
+vercel
+```
+
+### Backend (Railway)
+1. Connect GitHub repository to Railway
+2. Set environment variables
+3. Auto-deploys on push to main
+
+See [DEVELOPER.md](./DEVELOPER.md) for detailed deployment steps.
+
+## Support & Help
+
+- **User Help**: See [USER_GUIDE.md](./USER_GUIDE.md)
+- **Development**: See [DEVELOPER.md](./DEVELOPER.md)
+- **API Reference**: See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md)
+- **Troubleshooting**: See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
+- **Issues**: Report on GitHub issues
+- **Email**: support@pmp-flashcards.com
+
+## Contributing
+
+Contributions are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests
+5. Submit a pull request
+
+## Performance Optimization Tips
+
+For users:
+- Review daily at same time
+- Focus on overdue cards first
+- Rate honestly for algorithm accuracy
+- Use offline mode during commute
+- Export data regularly for backup
+
+For developers:
+- Use React.memo for pure components
+- Implement useCallback for event handlers
+- Cache API responses appropriately
+- Lazy load images and heavy components
+- Monitor Web Vitals with DevTools
+
+## Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## License
+
+MIT License - See LICENSE file for details
+
+## Version History
+
+- **v1.0.0** (2026-05-05) - Complete implementation with all 16 tasks
+  - Full-stack application complete
+  - All features implemented
+  - Production-ready code
+  - Comprehensive documentation
+
+---
+
+**Last Updated**: 2026-05-05  
+**Status**: Production Ready  
+**Maintainer**: PMP Flashcard Team
+
+For more information, see the documentation files linked above.
 
