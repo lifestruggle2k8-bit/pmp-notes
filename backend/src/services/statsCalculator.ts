@@ -147,7 +147,7 @@ export async function calculateUserStats(userId: string): Promise<StatsResponse>
   });
 
   const totalReviews = allReviews.length;
-  const correctReviews = allReviews.filter((r) => r.quality > 0).length;
+  const correctReviews = allReviews.filter((r: any) => r.quality > 0).length;
   const masteryPercentage =
     totalReviews > 0 ? Math.round((correctReviews / totalReviews) * 100) : 0;
 
@@ -155,7 +155,7 @@ export async function calculateUserStats(userId: string): Promise<StatsResponse>
   const avgTimePerCard =
     totalReviews > 0
       ? Math.round(
-          allReviews.reduce((sum, r) => sum + r.timeSpent, 0) / totalReviews
+          allReviews.reduce((sum: number, r: any) => sum + r.timeSpent, 0) / totalReviews
         )
       : 0;
 
@@ -163,7 +163,7 @@ export async function calculateUserStats(userId: string): Promise<StatsResponse>
   const sevenDaysAgo = new Date();
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
   const reviewsLast7Days = allReviews.filter(
-    (r) => new Date(r.createdAt) > sevenDaysAgo
+    (r: any) => new Date(r.createdAt) > sevenDaysAgo
   ).length;
   const reviewsPerDay = Math.round(reviewsLast7Days / 7);
 
