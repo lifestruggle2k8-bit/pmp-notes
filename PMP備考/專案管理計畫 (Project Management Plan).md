@@ -11,84 +11,56 @@ tags:
   - hover-notes
   - udemy
 ---
+在進入任何專案的執行階段之前，無論是建造大樓還是開發軟體，一份詳盡且經整合的**專案管理計畫 (Project Management Plan)** 是成功的先決條件。它不僅明確了專案的目標，更定義了專案如何被執行、監控、控制與結束。
 
-### 專案管理計畫
+---
 
-- 在執行任何專案前（如建造建築物、粉刷牆壁、編寫程式碼），**必須先有計畫**
-    - 明確知道一開始想做什麼
-    - 知道如何執行
-    - 包含想做什麼、預算多少、需要多久時間、完成工作的所有方法
-- 所有內容儲存在一個**相當大的文件**中，稱為**專案管理計畫**
+## 專案管理計畫的核心組成
 
-### 專案管理計畫的組成
+這份大型文件由 **$18$ 個元件** 構成，其中包含 **$14$ 個管理計畫** 與 **$4$ 個基準線 (Baselines)**。雖然在 PMP 考試或正式指南中會列出這些元件，但實務上，「包含但不限於」是一個常見的術語，意味著專案經理可以根據專案需求靈活增減計畫內容。
 
-- 包含**18個元件**、**14個計畫**和**4個基準線**
-- 「**包含但不限於**」，提供各領域管理步驟
-    - **品質管理**
-    - **人員管理**
-    - **供應商管理**
-    - **風險管理**
-    - 及其他事項
-- **專案管理計畫定義**專案如何**執行**（完成工作）、**監控**、**控制**及**結束**
-- 包含**18個組成部分**（components）、**14個計畫**（plans）和**4個基準線**（baselines）
-    - 稍後詳細說明這18個組成部分
-- **「包含但不限於」（include but not limited to）**是概括性術語
-    - PMI學習指南中常用於49個流程的輸入描述
-    - 列舉特定計畫時，表示還可能包含其他計畫
+![Project Management Plan components (由 AI 生成)](https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTex1oFILdMG2CxF8ICiXIQ0p6mTCl5hrmEidh40iJIK5qSHTFHuEATbF32DN-gZPyxeKiiJ4U1yv4jNnJs1_w8IVzFIuQBuRNlLBmExcrJwNAnfAM)
 
-### 專案管理計畫的18個元件
+vaeenma
 
-- **18個元件**：
-    - **管理計畫**（14個）：
-        - **範疇管理計畫**：Plan Scope Management
-        - **需求管理計畫**：Plan Scope Management
-        - **時程管理計畫**：Plan Schedule Management
-        - **成本管理計畫**：Plan Cost Management
-        - **品質管理計畫**：Plan Quality Management
-        - **資源管理計畫**：Plan Resource Management
-        - **溝通管理計畫**：Plan Communications Management
-        - **風險管理計畫**：Plan Risk Management
-        - **採購管理計畫**：Plan Procurement Management
-        - **利害關係人管理計畫**：Plan Stakeholder Management
-        - **變更管理計畫**：Develop Project Management Plan
-        - **組態管理計畫**：Develop Project Management Plan
-    - **基準線**（4個）：
-        - **範疇基準**：Create WBS
-        - **時程基準**：Develop Schedule
-        - **成本基準**：Determine Budget
-        - **績效衡量基準**：Develop Project Management Plan
-    - **其他**：
-        - **專案生命週期描述**：Develop Project Management Plan
-        - **發展方法**：Develop Project Management Plan
+### 18 個元件及其對應流程總表
 
-| 專案計畫 | 製作流程 |
-| --- | --- |
-| 範疇管理計畫 | Plan Scope Management |
-| 需求管理計畫 | Plan Scope Management |
-| 時程管理計畫 | Plan Schedule Management |
-| 成本管理計畫 | Plan Cost Management |
-| 品質管理計畫 | Plan Quality Management |
-| 資源管理計畫 | Plan Resource Management |
-| 溝通管理計畫 | Plan Communications Management |
-| 風險管理計畫 | Plan Risk Management |
-| 採購管理計畫 | Plan Procurement Management |
-| 利害關係人管理計畫 | Plan Stakeholder Management |
-| 變更管理計畫 | Develop Project Management Plan |
-| 組態管理計畫 | Develop Project Management Plan |
-| 範疇基準 | Create WBS |
-| 時程基準 | Develop Schedule |
-| 成本基準 | Determine Budget |
-| 績效衡量基準 | Develop Project Management Plan |
-| 專案生命週期描述 | Develop Project Management Plan |
-| 發展方法 | Develop Project Management Plan |
+這 $18$ 個元件並非一次性產生，而是透過不同的專案管理流程逐步建立並整合：
 
-- 有些元件容易理解，有些包含**困難內容**
-- 這些是**流程名稱**，後續在**49個流程**中逐一解釋各元件
-- **許多專案不會包含所有18個元件**
-    - 很少有專案會擁有全部18個
-- 許多人已有**專案管理計畫**，只是**放在腦子裡**
-- 隨著課程進展，會在**49個流程**中深入解釋各元件
-- **專案管理計畫**是**幾乎每個49個流程的輸入**
-    - 因為它是**大型文件**，定義**如何執行**、**如何控制**、**如何規劃**
-    - 若計畫告訴**如何做某事**，即成為該**流程的輸入**
-- 在後續課程涵蓋**49個流程**時，會深入解釋這**18個元件**的每個細節
+|**分類**|**元件名稱**|**對應流程 (建立之來源)**|
+|---|---|---|
+|**管理計畫**|範疇管理計畫 (Scope management plan)|Plan Scope Management|
+||需求管理計畫 (Requirements management plan)|Plan Scope Management|
+||時程管理計畫 (Schedule management plan)|Plan Schedule Management|
+||成本管理計畫 (Cost management plan)|Plan Cost Management|
+||品質管理計畫 (Quality management plan)|Plan Quality Management|
+||資源管理計畫 (Resource management plan)|Plan Resource Management|
+||溝通管理計畫 (Communications management plan)|Plan Communications Management|
+||風險管理計畫 (Risk management plan)|Plan Risk Management|
+||採購管理計畫 (Procurement management plan)|Plan Procurement Management|
+||利害關係人參與計畫 (Stakeholder engagement plan)|Plan Stakeholder Management|
+||變更管理計畫 (Change management plan)|Develop Project Management Plan|
+||組態管理計畫 (Configuration management plan)|Develop Project Management Plan|
+|**基準線**|範疇基準 (Scope baseline)|Create WBS|
+||時程基準 (Schedule baseline)|Develop Schedule|
+||成本基準 (Cost baseline)|Determine Budget|
+||績效衡量基準 (Performance measurement baseline)|Develop Project Management Plan|
+|**其他描述**|專案生命週期描述 (Project life cycle description)|Develop Project Management Plan|
+||發展方法 (Development approach)|Develop Project Management Plan|
+
+---
+
+## 專案管理計畫的關鍵特性
+
+1. **整合輸入來源**：專案管理計畫是 49 個流程中幾乎所有流程的**輸入 (Input)**。因為它定義了如何執行與規劃，各個子流程必須參考它來確保動作一致。
+    
+2. **基準線 (Baselines) 的嚴謹性**：計畫中的 $4$ 個基準線（範疇、時程、成本、績效）是用來衡量績效的尺標。一旦確立，任何變更都必須透過正式的變更請求程序。
+    
+3. **量身訂做 (Tailoring)**：很少有專案會完整擁有全部 $18$ 個元件。許多專案經理雖然心中有計畫，但在正式環境中，必須將這些計畫具現化為文件，以利團隊協作與監控。
+    
+4. **定義與指引**：它不僅僅是預算或時間表，它包含了如何管理品質、人員、供應商與風險的所有步驟與方法。
+    
+
+> **💡 溫馨提醒：**
+> 
+> 理解這 $18$ 個元件是通過 PMP 考試的基礎，但更重要的是理解它們如何相互依賴。例如，如果你的「時程管理計畫」告訴你如何處理延遲，當你在「監控與控制」階段發現進度偏離時，這份計畫就是你採取行動的最高指導原則。
