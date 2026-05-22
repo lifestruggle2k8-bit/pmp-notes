@@ -22,7 +22,7 @@ created: 2026-04-17
 > 💡 理解調適式與預測式的核心差異，及其適用情境與效益是考點。
 
 ## 相關術語
-[[敏捷 (Agile)]] [[迭代 (Iterative)]] [[漸進式 (Incremental)]] [[混合式 (Hybrid)]] [[預測式 (Predictive)]] [[Scrum]]
+[[敏捷 (Agile)]] [[迭代 (Iterative)]] [[漸進式 (Incremental)]] [[混合式 (Hybrid)]] [[預測式 (Predictive)]] [[專案管理輕鬆學/wiki/concepts/terms/Scrum]]
 
 ## 相關章節
 - [[PMBOK 7th: 發展方法與生命週期績效領域]]

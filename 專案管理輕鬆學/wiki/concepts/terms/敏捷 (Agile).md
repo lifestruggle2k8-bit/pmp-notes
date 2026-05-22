@@ -22,7 +22,7 @@ created: 2026-04-17
 > 💡 理解敏捷核心價值、原則及實踐，並能區分與預測型專案的差異。
 
 ## 相關術語
-[[Scrum]] [[看板 (Kanban)]] [[Sprint]] [[產品待辦事項 (Product Backlog)]] [[增量 (Increment)]]
+[[專案管理輕鬆學/wiki/concepts/terms/Scrum]] [[看板 (Kanban)]] [[Sprint]] [[產品待辦事項 (Product Backlog)]] [[增量 (Increment)]]
 
 ## 相關章節
 - [[Ch02_專案的八大績效領域]]

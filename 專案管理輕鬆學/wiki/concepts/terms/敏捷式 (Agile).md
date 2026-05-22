@@ -22,7 +22,7 @@ created: 2026-04-17
 > 💡 PMP考題敏捷重價值、應變與協作。掌握核心原則與適用性。
 
 ## 相關術語
-[[Scrum]] [[Kanban]] [[敏捷宣言 (Agile Manifesto)]] [[迭代 (Iteration)]] [[增量 (Increment)]] [[預測式 (Predictive)]] [[衝刺 (Sprint)]]
+[[專案管理輕鬆學/wiki/concepts/terms/Scrum]] [[Kanban]] [[敏捷宣言 (Agile Manifesto)]] [[迭代 (Iteration)]] [[增量 (Increment)]] [[預測式 (Predictive)]] [[衝刺 (Sprint)]]
 
 ## 相關章節
 - [[Ch02_專案的八大績效領域]]
