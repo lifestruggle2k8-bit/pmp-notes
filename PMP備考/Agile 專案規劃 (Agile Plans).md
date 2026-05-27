@@ -11,94 +11,92 @@ tags:
   - hover-notes
   - udemy
 ---
+# Agile 專案規劃 (Agile Plans) 終極實戰指南
 
-### Agile 專案規劃 (Agile Plans)
+在敏捷管理中，**Agile 專案規劃（Agile Plans）** 的核心靈魂在於擁抱變動與不確定性。它徹底打破了傳統前期龐大規劃的鐵牢，將規劃轉化為一個隨著產品建構、透過高頻獲取反饋而持續演進的動態調整流程。
 
-- Agile 規劃與傳統規劃的差異點：
-    - 透過試驗與演示 (Trial and demonstration) 來揭露真實的需求
-        - 隨著產品的建構，這些發現會驅動後續的重新規劃 (Replanning)
-    - 減少前期規劃的投入量
-        - 規劃並非集中在專案開始前的龐大工作，而是在整個專案執行過程中持續進行
-    - 中期調整是常態 (Midcourse adjustments are the norm)
+## 一、 規劃範式對比與核心執行邏輯
 
-### Agile 規劃的執行邏輯
+### 1. 核心執行邏輯：小規模增量降低風險
 
-- 透過小規模增量開發來降低風險
-    - 與其一開始就試圖創造出完美的產品，不如先開發產品的小部分增量 (small increments)
-    - 藉由這些增量獲取回饋 (feedback)，並根據回饋來重新調整產品
-    - **[優點]** 這種方式能確保最終交付的成果確實符合客戶的所有需求
-- 規劃重心的轉移
-    - 減少前期的龐大規劃工作 (less upfront effort)
-    - 規劃主要集中在下一個衝刺階段 (next sprint) 或迭代 (iteration) 中
-    - 整個專案過程中，中期調整 (midcourse adjustments) 是常態性的工作
+敏捷規劃不寄望於一開始就試圖創造出完美的萬年產品，而是**採取小規模增量開發（Small Increments）模式**。
 
-### Agile 與傳統規劃的反應差異
+- **試驗與演示 (Trial and Demonstration)**：透過多次小版本的發佈與展示，在開火中**揭露真實的使用者需求**。
+    
+- **高頻反饋閉環**：藉由這些增量在市場或檢視會中快速獲取真實反饋（Feedback），並根據反饋來驅動後續的**重新規劃 (Replanning)**。
+    
+- **🎯 核心優點**：這種「規劃 $\rightarrow$ 執行 $\rightarrow$ 調整」的動態循環，能**確保最終交付的產出成果，確實百分之百符合客戶的所有真實需求**。
+    
 
-- **[需求轉向]** Agile 允許產品進行大幅度的調整，甚至完全轉向 (a complete 180-degree turn)
-    - 客戶在體驗過幾個版本 (releases) 後，可能會發現產品並非他們真正需要的
-    - 這種調整在 Agile 專案中是正常的流程
-- **[交付模式的影響]** 這種靈活性源於交付方式的不同
-    - **Agile**: 透過多次發佈，讓客戶在開發過程中持續使用並提供回饋
-    - **傳統專案**: 通常在整個產品開發完成後才交付給客戶，客戶在產品完工前幾乎沒有使用機會，因此很難在開發中途進行方向性的修正
+### 2. 反應落差：減少前期投入，中期調整成為常態
 
-### Agile 規劃原則 (Principles of Agile Planning)
+敏捷規劃與傳統規劃在人際與商業變動上，有著截然不同的反應模式：
 
-1. 在多個層級進行規劃 (Plan at multiple levels)
-2. 讓團隊與客戶參與規劃 (Engage the team and the customer in planning)
-3. 透過頻繁展示進度來管理預期 (Manage expectations by frequently demonstrating progress)
-4. 根據專案特性量身定制流程 (Tailor processes to the project's characteristics)
-5. 根據專案優先順序更新計畫 (Update the plan based on the project priorities)
-6. 確保估算包含風險、干擾與團隊可用性 (Ensure encompassing estimates that account for risk, distractions, and team availability)
-7. 使用適當的估算範圍來反映不確定性 (Use appropriate estimate ranges to reflect the level of uncertainty in the estimate)
-8. 以完成率作為預測基礎 (Base projections on completion rates)
-9. 將分心事項與外部工作納入考量 (Factor in diversion and outside work)
+|**評估維度**|**📈 Agile 專案規劃**|**🛑 傳統專案規劃 (Predictive)**|
+|---|---|---|
+|**前期規劃投入**|**減少前期規劃的投入量 (Less Upfront Effort)**，不將時間集中在專案開始前的龐大估算，而是在整個過程中持續進行。|將龐大的工作量與細節完全集中在專案最開始的階段，試圖死鎖所有細節。|
+|**規劃重心**|主要高度集中在**下一個衝刺階段 (Next Sprint) 或迭代 (Iteration)** 內。|試圖跨越數個月甚至數年的尺度，預測大後期的工作流。|
+|**變更容忍度**|**中期調整 (Midcourse Adjustments) 是常態性的工作**。允許產品進行大幅度調整，**甚至直接進行 180 度的大轉彎 (Complete 180-degree turn)**。|極度抗拒變更。一旦方向定案，後續的變更會引發高昂的合約與政治成本。|
+|**交付模式影響**|透過多次版本發佈（Releases），讓客戶在開發過程中**持續看見、使用並提供回饋**。|通常在整個產品全部開發完成後才一次性交付。客戶在完工前幾乎沒有使用機會，很難中途進行方向修正。|
 
-### Agile 規劃原則詳解
+> 💡 **極致靈活性的心理學基礎**：
+> 
+> 客戶在親自體驗過幾個發佈版本（Releases）後，經常會恍然大悟，發現最初提的需求「並非他們真正需要的」。這種 180 度的大轉向在敏捷專案中被視為正常的良性流程，而非專案失敗。
 
-- **在多個層級進行規劃 (Plan at multiple levels)**
-    - 規劃並非只發生在專案最開始或最後，而是橫跨不同時間尺度
-    - 隨著專案推進，規劃的深度與細節會隨著進度（如 25%、30%、50%）不斷更新
-- **讓團隊與客戶參與規劃 (Engage the team and the customer in planning)**
-    - 規劃不應只是管理層的決策
-    - 必須讓執行團隊與最終客戶共同參與所有的規劃流程
-- **透過頻繁展示進度來管理預期 (Manage expectations by frequently demonstrating progress)**
-    - **[為什麼要這樣做？]** 為了確保客戶對專案進度與成果有正確的認知，避免最後才發現落差
-    - 具體做法包括：
-        - 提供產品發佈版本 (Releases)
-        - 在衝刺檢視會議 (Sprint review meetings) 中展示成果
-- **根據專案特性量身定制流程 (Tailor processes to the project's characteristics)**
-    - 根據專案本身的特性來調整專案特性
-    - 修改流程以最佳程度匹配專案的需求
-- **根據專案優先順序更新計畫 (Update the plan based on the project priorities)**
-    - 當新的需求被加入，或是需求發生變動時，必須隨之更新計畫
-- **確保估算包含風險、干擾與團隊可用性 (Ensure encompassing estimates that account for risk, distractions, and team availability)**
-    - **[關鍵觀念]** 提供估算時，不能只看純粹的開發時間
-    - 估算必須包含以下因素：
-        - 潛在風險 (Risks)
-        - 外部干擾 (Distractions)
-        - 團隊成員的實際可用性 (Team availability)
-- **確保估算包含風險、干擾與團隊可用性 (Ensure encompassing estimates that account for risk, distractions, and team availability)**
-    - **[為什麼要這樣做？]** 因為給出純粹的開發時間會導致計畫失準
-    - 如果只估算執行任務的時間（例如 6 小時），卻忽略了研究時間（2 小時）或任務失敗後需要重新研究的風險，最終的實際耗時可能會達到 10 小時
-    - **正確做法**：估算應包含所有必要的研發、研究與應對風險的緩衝時間
-- **使用適當的估算範圍來反映不確定性 (Use appropriate estimate ranges to reflect the level of uncertainty in the estimate)**
-    - 不要只給出一個死板的數字（例如「4 小時」或「6 小時」）
-    - **[如何操作]** 應提供一個範圍來表達信心程度，例如「6 小時 $\pm$ 3 小時"
-    - 當專案的不確定性越高時，提供的估算範圍也應該越廣，以反映真實的風險狀況
+## 二、 敏捷規劃九大原則深度解析 (Principles of Agile Planning)
 
-### 預測與干擾因素 (Projections and Distractions)
+在備考與實務引導中，**千萬不要死記硬背這些原則的固定順序或排名**（考試絕不會考「敏捷規劃的第一大原則是什麼」）。考生與經理人應**著重於理解這些原則「如何運作」以及「為什麼要這樣做」**，以此秒殺觀念情境題。
 
-- **以完成率作為預測基礎 (Base projections on completion rates)**
-    - **[如何操作]** 當被問到某項工作需要多久時，不要隨口給出一個數字
-    - **[正確邏輯]** 應根據過去類似工作的完成速度來推算：
-        - 「根據我們之前完成類似工作的速度，這項工作大概需要多久時間」
-    - 預測必須建立在「已完成且通過驗證」的工作基礎之上
-- **將分心事項與外部工作納入考量 (Factor in diversion and outside work)**
-    - 規劃時必須將任何可能影響工作者的外部工作或干擾因素納入計畫中
+### 原則 1：在多個層級進行規劃 (Plan at Multiple Levels)
 
-### Agile 規劃原則的學習重點
+規劃橫跨不同的時間尺度（如願景、產品地圖、發佈、Sprint、每日）。隨專案推進，規劃的深度與細節會隨著進度條（如 25%、30%、50%）不斷動態更新。
 
-- **理解邏輯而非死記硬背 (Understand concepts, don't just memorize)**
-    - 這些原則並非為了考試而設定的固定順序或排名（例如不會考「Agile 規劃的第一大原則是什麼」）
-    - **[考試重點]** 應著重於理解這些原則**如何運作**以及**為什麼**要這樣做
-    - 掌握這些概念背後的原理，能幫助應對關於 Agile 規劃邏輯的觀念題
+### 原則 2：讓團隊與客戶參與規劃 (Engage the Team and the Customer)
+
+規劃絕對不應只是管理層或 PM 單方面的決策。必須發揮**參與式決策模型**，讓負責執行的開發團隊與最終客戶共同深度參與所有的規劃與估算流程。
+
+### 原則 3：透過頻繁展示進度來管理預期 (Manage Expectations by Frequently Demonstrating Progress)
+
+為了確保客戶對專案進度與成果有正確、無偏差的認知，避免在最後一刻才發現巨大的評估鴻溝。具體做法包括：
+
+- 持續提供可運行的產品發佈版本 (Releases)。
+    
+- 在每個迭代結束的**衝刺檢視會議 (Sprint Review Meetings)** 中，誠實向利害關係人展示成果。
+    
+
+### 原則 4：根據專案特性量身定制流程 (Tailor Processes to the Project's Characteristics)
+
+拒絕死板地生搬硬套敏捷框架（如一成不變的 Scrum）。經理人必須根據專案本身的獨特屬性與環境限制，動態修改並裁減流程，以最佳程度匹配專案的實際需求。
+
+### 原則 5：根據專案優先順序更新計畫 (Update the Plan Based on Priorities)
+
+當新的需求被納入 Product Backlog，或是市場需求發生變動時，計畫必須隨之重排優先權並即時更新，確保團隊永遠在做價值最高的事情。
+
+### 原則 6：確保估算包含風險、干擾與團隊可用性 (Ensure Encompassing Estimates)
+
+提供估算時，**絕對不能只看純粹的「開發時間（理想時間）」**，這會導致計畫嚴重失準。
+
+- _【反面陷阱範例】_：只估算單純執行任務的時間為 6 小時，卻忽略了前期研究（2 小時）或任務失敗後需要重新研究的潛在風險，最終實際耗時會直接爆表達到 10 小時。
+    
+- _【正確做法】_：正確的估算必須將**潛在風險 (Risks)、外部干擾 (Distractions) 以及團隊成員的實際可用性 (Team Availability)** 全面納入，包含所有必要的研發與緩衝時間。
+    
+
+### 原則 7：使用適當的估算範圍來反映不確定性 (Use Estimate Ranges)
+
+不要給出一個死板、精確的虛假數字（例如鐵口直斷「需要 6 小時」）。應提供一個範圍來真實表達信心程度（例如：**「6 小時 $\pm$ 3 小時」**）。**專案初期或不確定性越高時，提供的估算範圍也應該越廣**，以反映真實的風險狀況（錐形不確定性理論）。
+
+### 原則 8：以完成率作為預測基礎 (Base Projections on Completion Rates)
+
+當被問到某項工作還需要多久才能完工時，嚴禁隨口盲目通報一個數字。正確的預測邏輯必須完全**建立在「過去類似工作已完成且通過驗證」的實際速度（如歷史平均速率 Average Velocity）之基礎上**進行推算：「根據我們之前完成類似工作的速度，這項工作大概需要多久時間。」
+
+### 原則 9：將分心事項與外部工作納入考量 (Factor in Diversion and Outside Work)
+
+規劃時必須清醒將任何可能影響工作者的外部臨時交辦工作、組織會議、或日常干擾因素（Diversion）納入產能計算中，絕不把團隊的產能理想化。
+
+## 💡 三點需要牢記的部分
+
+1. **試驗與演示（Trial & Demo）是揭露真實需求的探照燈，180 度大轉彎是敏捷的常態**：在備考與實務中，必須深刻理解敏捷規劃對「變更」的底層世界觀。客戶往往是不見棺材不掉淚──不看到真實產品就不懂自己的需求。敏捷透過 **Sprint Review 頻繁展示成果與多次發佈（Releases）**，就是為了用低成本引導出客戶的 180 度大轉向，在開發中途以極低代價完成方向修正，這與傳統視變更為大忌的瀑布流有本質落差。
+    
+2. **純開發時間估算（Ideal Time）是計畫失準的毒藥，必須用風險、干擾與可用性進行全面武裝**：這是極高頻的情境估算題考點！當題目問到如何給出科學的時程估算時，**請堅決無視任何「只計算執行任務時間」的純粹工程選項**。正確的敏捷估算必須包含：**風險（Risks）、外部干擾（Distractions）以及實際可用性（Team Availability）**，並採用 **Range（如 6 小時 $\pm$ 3 小時）** 的範圍形式來誠實反映專案初期的不確定性，這才是僕人式領導者保護團隊產能的精實工法。
+    
+3. **預測必須建立在「已完成且通過驗證」的歷史速率上，規劃是橫跨多層級的 Ongoing process**：結合先前所學的速率圖（Velocity Charts），當被高層或客戶逼問完工時間時，標準答案絕對是 **Base projections on completion rates（以完成率/歷史速率作為預測基礎）**。敏捷規劃是一個橫跨多個尺度、隨著進度條不斷動態更新細節的 **Ongoing process**。唯有將外部工作與分心事項納入考量，並根據專案特性量身定制流程（Tailor processes），才能架構出最具防禦力的敏捷適應性計畫。
