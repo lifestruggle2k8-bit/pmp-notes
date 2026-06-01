@@ -5,12 +5,12 @@ description: >-
   Exam
 author: Udemy
 source: >-
-  https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/13041388#overview
+  https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/13092402#overview
 created: "2026-06-01"
 tags:
   - hover-notes
   - udemy
 ---
 
-![00:00:19](hover-notes-images/screenshot-01KT12AVK7AN82RY8E6W6F7MZA.png)
-[00:00:19](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/13092370#overview)
+![00:00:18](hover-notes-images/screenshot-01KT158EWPFSN5J2T5E8MJRXAZ.png)
+[00:00:18](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/13092402#overview)
