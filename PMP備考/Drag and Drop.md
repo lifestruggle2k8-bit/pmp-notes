@@ -32,3 +32,24 @@ tags:
 
 ![00:03:43](hover-notes-images/screenshot-01KT1QC2B1YDBF8EPAG28Z5QT7.png)
 [00:03:43](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959150#overview)
+
+![00:02:37](hover-notes-images/screenshot-01KT1R0TV8T31KKX9ARVJDHD49.png)
+[00:02:37](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959152#overview)
+
+![00:04:53](hover-notes-images/screenshot-01KT1R6S5FPAT95B67NDCP96K8.png)
+[00:04:53](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959156#overview)
+
+![00:05:37](hover-notes-images/screenshot-01KT1RDBAFN45EJFR3JZKX4PC1.png)
+[00:05:37](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959160#overview)
+
+![00:03:10](hover-notes-images/screenshot-01KT1RF4NJKS9D5FJTKDCAXWEW.png)
+[00:03:10](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959162#overview)
+
+![00:02:51](hover-notes-images/screenshot-01KT1RGY16QJW61SH238GY3V9E.png)
+[00:02:51](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959164#overview)
+
+![00:02:40](hover-notes-images/screenshot-01KT1RM3A6MS080R4DWE4QXGWZ.png)
+[00:02:40](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959168#overview)
+
+![00:02:57](hover-notes-images/screenshot-01KT1RS7T4G4AWDSAP5ETNMA60.png)
+[00:02:57](https://www.udemy.com/course/pmp-certification-exam-prep-course-pmbok-6th-edition/learn/lecture/23959172#overview)
